@@ -7,5 +7,6 @@
 
 import Foundation
 
-print("Ruleta rusa")
+print("Corriendo programa")
 //EjercicioRuleta()
+tarea1media()

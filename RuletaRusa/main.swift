@@ -8,5 +8,5 @@
 import Foundation
 
 print("Corriendo programa")
-//EjercicioRuleta()
-tarea1media()
+EjercicioRuleta()
+//tarea1media()

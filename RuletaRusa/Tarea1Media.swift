@@ -16,7 +16,7 @@ func tarea1media(){
         
         let resultado = Int(texto) // Aqui hacemos la comprobación con una variable local
         
-        if resultado == nil{ //Si la variable local devuelve un NIL significa que NO puede convertirlo en un numero y que por ende NO es nu numero        
+        if resultado == nil{ //Si la variable local devuelve un NIL significa que NO puede convertirlo en un numero y que por ende NO es nu numero
             esNumero(texto: repetirNumero())// Ahora llama a pedir numero, imprime un error, y volvemos a pedir el valor para después enviarlo de nuevo a esta misma función, creando así un bucle en el que si y solo si es un número va a salir del bucle
         }
             return true

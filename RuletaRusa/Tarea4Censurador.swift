@@ -9,6 +9,9 @@ func censurador(){
     
     func censurarTexto(texto: String) -> String{
         
+        for i in texto{
+           // if texto.map(<#T##transform: (Character) throws(Error) -> T##(Character) throws(Error) -> T#>)
+        }
         
         return texto
     }

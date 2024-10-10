@@ -47,6 +47,7 @@ func tarea1media(){
     var sumatorioNumeroInt = 0
     var cantidadDeNumeros = 0
     print("¿Cuantos numeros quieres introducir para hacer la media?")
+    var arrayNumeros: [Int] = []
     
     numero = readLine()!
     if esNumero(texto: numero){
@@ -59,16 +60,18 @@ func tarea1media(){
     print("Introduce el primero: ")
     numero = readLine()!
     if esNumero(texto: numero){
-        sumatorioNumeroInt += transformarANumero(numero: numero)
+        arrayNumeros.append(transformarANumero(numero: numero))
     }
     for i in 2...cantidadDeNumeros{
         print("Introduce el siguiente: ")
         numero = readLine()!
         if esNumero(texto: numero){
-            sumatorioNumeroInt += transformarANumero(numero: numero)
+            arrayNumeros.append(transformarANumero(numero: numero))
         }
     }
-   
+    sumatorioNumeroInt = arrayNumeros.reduce(0, { sumatorio, n in
+        sumatorio + n})  //una vez pones el reduce, te salen 3 cosas, una "result", que va a ser el numero inicial por si no pones nada, luego se abre una llave para poner una variable que irá guardando los resultados de las operaciones, despues de la coma hay una variable que será la que se opere con los valores que haya en la variable del medio (en este caso sumatorio) y por último después del IN se pone la operacion que quieres que se haga con todos los valores del ARRAY, en este caso es una suma pero podria ser una multiplicacion o una resta
+    
     let mediaUsuario = (sumatorioNumeroInt / cantidadDeNumeros)
     print("La media de los números introducidos es:", mediaUsuario)
 }

@@ -9,6 +9,6 @@ import Foundation
 
 print("Corriendo programa")
 
-censurador()
+//censurador()
 //EjercicioRuleta()
-//tarea1media()
+tarea1media()
